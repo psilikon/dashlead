@@ -19,9 +19,9 @@ app.config['MYSQL_DB'] = 'asterisk'
 # Intialize MySQL
 mysql = MySQL(app)
 
-@app.route('/pythonlogin/', methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST'])
 def login():
-	return render_template('HTML/index.html', msg='')
+	return render_template('index.html', msg='')
 
 
 @app.route('/pythonlogin/tables', methods=['GET', 'POST'])
