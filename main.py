@@ -21,17 +21,17 @@ mysql = MySQL(app)
 
 @app.route('/pythonlogin/', methods=['GET', 'POST'])
 def login():
-	return render_template('dashboard.html', msg='')
+	return render_template('HTML/index.html', msg='')
 
 
 @app.route('/pythonlogin/tables', methods=['GET', 'POST'])
 def tables():
-	return render_template('tables.html', msg='')
+	return render_template('HTML/tables.html', msg='')
 
 @app.route('/pythonlogin/icons', methods=['GET', 'POST'])
 def icons():
 	return render_template('icons.html', msg='')	
 
 if __name__ == "__main__":
-  #app.run()
-  serve(app)
+  app.run()
+  #serve(app)
