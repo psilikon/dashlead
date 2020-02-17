@@ -28,9 +28,17 @@ def login():
 def tables():
 	return render_template('tables.html', msg='')
 
-@app.route('/pythonlogin/icons', methods=['GET', 'POST'])
-def icons():
-	return render_template('icons.html', msg='')	
+@app.route('/1', methods=['GET', 'POST'])
+def one():
+	return render_template('1.html', msg='')	
+
+@app.route('/2', methods=['GET', 'POST'])
+def two():
+	return render_template('2.html', msg='')		
+
+@app.route('/3', methods=['GET', 'POST'])
+def three():
+	return render_template('3.html', msg='')		
 
 if __name__ == "__main__":
   app.run(static_folder='static')
