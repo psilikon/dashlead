@@ -24,14 +24,14 @@ def login():
 	return render_template('index.html', msg='')
 
 
-@app.route('/pythonlogin/tables', methods=['GET', 'POST'])
+@app.route('/tables', methods=['GET', 'POST'])
 def tables():
-	return render_template('HTML/tables.html', msg='')
+	return render_template('tables.html', msg='')
 
 @app.route('/pythonlogin/icons', methods=['GET', 'POST'])
 def icons():
 	return render_template('icons.html', msg='')	
 
 if __name__ == "__main__":
-  app.run()
+  app.run(static_folder='static')
   #serve(app)
